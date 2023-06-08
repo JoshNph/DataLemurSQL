@@ -45,7 +45,9 @@ Write a query to return the IDs of the Facebook pages which do not possess any l
 | 156	    | 20001	  | 07/25/2022 00:00:00 |
 
 **Example Output**
-
+| page_id |
+| ------- |
+| 20701   | 
 
 **Solution**
 <details>
