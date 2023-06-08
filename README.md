@@ -83,7 +83,7 @@ Tesla is investigating production bottlenecks and they need your help to extract
 
 ##### ➼ parts_assembly table contains all parts currently in production, each at varying stages of the assembly process.
 
-##### ➼ An unfinished part is one that lacks a finish_date.
+##### ➼ An unfinished part is one that lacks a `finish_date`.
 
 This question is straightforward, so let's approach it with simplicity in both thinking and solution.
 
