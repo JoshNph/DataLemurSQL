@@ -1,6 +1,6 @@
 # DataLemurSQL
 
-![alt text](https://datalemur.com/_next/image?url=%2Flogo.png&w=256&q=75 "DataLemur Logo")
+![alt_text](https://datalemur.com/_next/image?url=%2Flogo.png&w=256&q=75 "DataLemur Logo")
 
 Are you ready to crack the code to success in FAANG interviews? 🚀✨ 
 
@@ -72,3 +72,53 @@ WHERE page_id NOT IN
 ORDER BY 1;
 </code></pre>
 </details>
+
+---
+
+### Unfinished Parts (Easy) [Tesla SQL Interview Question]
+
+Tesla is investigating production bottlenecks and they need your help to extract the relevant data. Write a query that determines which parts with the assembly steps have initiated the assembly process but remain unfinished.
+
+#### Assumptions:
+
+##### ➼ parts_assembly table contains all parts currently in production, each at varying stages of the assembly process.
+
+##### ➼ An unfinished part is one that lacks a finish_date.
+
+This question is straightforward, so let's approach it with simplicity in both thinking and solution.
+
+`parts_assembly` **Table:**
+| Column Name   | Type     |
+| ------------- | -------- |
+| part          | string   |
+| finish_date   | datetime |
+| assembly_step | integer  |
+
+`page_likes` **Example Input:**
+| part    | finish_date         | assembly_step |
+| ------- |-------------------- |-------------- |
+| battery	| 01/22/2022 00:00:00	| 1             |
+| battery	| 02/22/2022 00:00:00	| 2             |
+| battery	| 03/22/2022 00:00:00	| 3             |
+| bumper	| 01/22/2022 00:00:00	| 1             |
+| bumper	| 02/22/2022 00:00:00	| 2             |
+| bumper	|                     | 3             |
+| bumper	| 		                | 4             |
+
+**Example Output**
+| part    | assembly_step |
+| ------- |-------------- |
+| bumper	| 3             |
+| bumper	| 4             |
+
+**Solution**
+<details>
+  <summary>Click to reveal the solution</summary>
+<pre><code>
+SELECT DISTINCT part 
+FROM parts_assembly
+WHERE finish_date IS NULL;
+</code></pre>
+</details>
+
+---
