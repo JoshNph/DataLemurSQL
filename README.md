@@ -21,6 +21,9 @@ Click the link below and let the learning begin! 🎓💡
 ### Table of Contents
 ### EASY
 1. [Page With No Likes [Facebook SQL Interview Question]](#easy1)
+2. [Unfinished Parts [Tesla SQL Interview Question]](#easy2)
+3. [Laptop vs. Mobile Viewership [New York Times SQL Interview Question]](#easy3)
+4. [Data Science Skills [LinkedIn SQL Interview Question]](#easy4)
 
 ---
 
@@ -81,7 +84,7 @@ ORDER BY 1;
 
 ---
 
-### Unfinished Parts (Easy) [Tesla SQL Interview Question]
+### <a id="easy2"></a>Unfinished Parts (Easy) [Tesla SQL Interview Question]
 
 Tesla is investigating production bottlenecks and they need your help to extract the relevant data. Write a query that determines which parts with the assembly steps have initiated the assembly process but remain unfinished.
 
@@ -129,7 +132,7 @@ WHERE finish_date IS NULL;
 
 ---
 
-### Laptop vs. Mobile Viewership (Easy) [New York Times SQL Interview Question]
+### <a id="easy3"></a>Laptop vs. Mobile Viewership (Easy) [New York Times SQL Interview Question]
 
 Assume you're given the table on user viewership categorised by device type where the three types are laptop, tablet, and phone.
 
@@ -177,7 +180,7 @@ FROM b, a
 
 ---
 
-### Data Science Skills (Easy) [LinkedIn SQL Interview Question]
+### <a id="easy4"></a>Data Science Skills (Easy) [LinkedIn SQL Interview Question]
 
 Given a table of candidates and their skills, you're tasked with finding the candidates best suited for an open Data Science job. You want to find candidates who are proficient in Python, Tableau, and PostgreSQL.
 
