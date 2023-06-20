@@ -18,7 +18,13 @@ Click the link below and let the learning begin! 🎓💡
 
 ---
 
-### Page With No Likes (Easy) [Facebook SQL Interview Question]
+Table of Contents
+EASY
+1. [Page With No Likes [Facebook SQL Interview Question]](#easy1)
+
+---
+
+### <a id="easy1"></a>Page With No Likes (Easy) [Facebook SQL Interview Question]
 
 Assume you're given the tables below about Facebook Page and Page likes (as in "Like a Facebook Page").
 
