@@ -18,8 +18,8 @@ Click the link below and let the learning begin! 🎓💡
 
 ---
 
-Table of Contents
-EASY
+### Table of Contents
+### EASY
 1. [Page With No Likes [Facebook SQL Interview Question]](#easy1)
 
 ---
