@@ -124,9 +124,10 @@ This question is straightforward, so let's approach it with simplicity in both t
 <details>
   <summary>Click to reveal the solution</summary>
 <pre><code>
-SELECT DISTINCT part 
+SELECT part, assembly_step
 FROM parts_assembly
-WHERE finish_date IS NULL;
+WHERE finish_date IS NULL
+;
 </code></pre>
 </details>
 
