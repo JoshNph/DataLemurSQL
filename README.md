@@ -261,3 +261,20 @@ Write a query to identify the top 2 Power Users who sent the highest number of m
 | --------- | ------------- |
 | 3601   	  | 2             |
 | 4500      | 1             |
+
+**Solution**
+<details>
+  <summary>Click to reveal the solution</summary>
+<pre><code>
+SELECT sender_id, COUNT(*) 
+FROM messages
+WHERE sent_date >= '08/01/22'
+AND sent_date < '9/01/22'
+GROUP BY sender_id
+ORDER BY 2 DESC
+LIMIT 2
+;
+</code></pre>
+</details>
+
+---
